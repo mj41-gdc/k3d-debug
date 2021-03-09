@@ -1,0 +1,34 @@
+# Debug K3d restarts
+
+    # setup
+    mkdir -p ~/devel/k3d
+    cd ~/devel/k3d
+    pwd
+    ls -al
+
+    # console 1
+    # check logs and send them to github if all seems ok
+    ls -als log*.txt
+    more log*.txt
+    # cleanup previous run
+    k3d cluster delete default
+    rm ~/devel/k3d/log-*.txt
+    ls -al
+
+    # console 2 
+    echo "#Start: `date --rfc-3339=ns`" > log-docker-events.txt ; docker events | tee -a log-docker-events.txt
+
+    # console 3 
+    echo "#Start: `date --rfc-3339=ns`" > log-start-k3d.txt ; k3d cluster create default --image rancher/k3s:v1.20.4-k3s1 2>&1 | tee -a log-start-k3d.txt ; echo "#End: `date --rfc-3339=ns`" >> log-start-k3d.txt
+
+    # console 4
+    # a few times run these till you see the first restart
+    echo "#Start_ps: `date --rfc-3339=ns`" | tee -a log-docker-ps.txt ; docker ps | tee -a log-docker-ps.txt 
+
+    # console 5
+    echo "#Start_logs: `date --rfc-3339=ns`" | tee -a log-docker-logs.txt ; docker logs --timestamps --details k3d-default-server-0 2>&1 | tee -a log-docker-logs.txt
+    
+    # console *
+    # Press ctrl+c
+
+    # check logs, repeat if needed
