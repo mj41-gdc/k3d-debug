@@ -1,34 +1,15 @@
-#Start_ps: 2021-03-09 12:59:34.915649773+01:00
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-#Start_ps: 2021-03-09 12:59:36.965410764+01:00
+#Start_ps: 2021-03-09 14:37:35.787131756+01:00
 CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS        PORTS     NAMES
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   3 seconds ago   Up 1 second             k3d-default-server-0
-#Start_ps: 2021-03-09 12:59:38.608461163+01:00
-CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS         PORTS     NAMES
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   4 seconds ago   Up 3 seconds             k3d-default-server-0
-#Start_ps: 2021-03-09 12:59:40.110181657+01:00
-CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS         PORTS     NAMES
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   6 seconds ago   Up 4 seconds             k3d-default-server-0
-#Start_ps: 2021-03-09 12:59:41.490390745+01:00
-CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS         PORTS     NAMES
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   7 seconds ago   Up 6 seconds             k3d-default-server-0
-#Start_ps: 2021-03-09 12:59:42.847271996+01:00
+00a852f2fdd9   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   2 seconds ago   Up 1 second             k3d-default-server-0
+#Start_ps: 2021-03-09 14:37:41.093282947+01:00
 CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS         PORTS                             NAMES
-dd39bf32dd53   rancher/k3d-proxy:v4.2.0   "/bin/sh -c nginx-pr…"   8 seconds ago   Up 1 second    80/tcp, 0.0.0.0:46225->6443/tcp   k3d-default-serverlb
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   8 seconds ago   Up 7 seconds                                     k3d-default-server-0
-#Start_ps: 2021-03-09 12:59:44.184869388+01:00
-CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS                          PORTS                             NAMES
-dd39bf32dd53   rancher/k3d-proxy:v4.2.0   "/bin/sh -c nginx-pr…"   10 seconds ago   Up 2 seconds                    80/tcp, 0.0.0.0:46225->6443/tcp   k3d-default-serverlb
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   10 seconds ago   Restarting (255) 1 second ago                                     k3d-default-server-0
-#Start_ps: 2021-03-09 12:59:45.664790952+01:00
+cd59598e1234   rancher/k3d-proxy:v4.2.0   "/bin/sh -c nginx-pr…"   8 seconds ago   Up 1 second    80/tcp, 0.0.0.0:41381->6443/tcp   k3d-default-serverlb
+00a852f2fdd9   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   8 seconds ago   Up 6 seconds                                     k3d-default-server-0
+#Start_ps: 2021-03-09 14:37:42.937804558+01:00
+CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS                                    PORTS                             NAMES
+cd59598e1234   rancher/k3d-proxy:v4.2.0   "/bin/sh -c nginx-pr…"   9 seconds ago   Up 3 seconds                              80/tcp, 0.0.0.0:41381->6443/tcp   k3d-default-serverlb
+00a852f2fdd9   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   9 seconds ago   Restarting (255) Less than a second ago                                     k3d-default-server-0
+#Start_ps: 2021-03-09 14:37:44.313059052+01:00
 CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS         PORTS                             NAMES
-dd39bf32dd53   rancher/k3d-proxy:v4.2.0   "/bin/sh -c nginx-pr…"   11 seconds ago   Up 4 seconds   80/tcp, 0.0.0.0:46225->6443/tcp   k3d-default-serverlb
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   11 seconds ago   Up 1 second                                      k3d-default-server-0
-#Start_ps: 2021-03-09 12:59:46.928395014+01:00
-CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS         PORTS                             NAMES
-dd39bf32dd53   rancher/k3d-proxy:v4.2.0   "/bin/sh -c nginx-pr…"   12 seconds ago   Up 5 seconds   80/tcp, 0.0.0.0:46225->6443/tcp   k3d-default-serverlb
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   12 seconds ago   Up 2 seconds                                     k3d-default-server-0
-#Start_ps: 2021-03-09 12:59:48.201510891+01:00
-CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS         PORTS                             NAMES
-dd39bf32dd53   rancher/k3d-proxy:v4.2.0   "/bin/sh -c nginx-pr…"   14 seconds ago   Up 6 seconds   80/tcp, 0.0.0.0:46225->6443/tcp   k3d-default-serverlb
-33034d3eed12   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   14 seconds ago   Up 3 seconds                                     k3d-default-server-0
+cd59598e1234   rancher/k3d-proxy:v4.2.0   "/bin/sh -c nginx-pr…"   11 seconds ago   Up 4 seconds   80/tcp, 0.0.0.0:41381->6443/tcp   k3d-default-serverlb
+00a852f2fdd9   rancher/k3s:v1.20.4-k3s1   "/bin/k3s server --t…"   11 seconds ago   Up 1 second                                      k3d-default-server-0

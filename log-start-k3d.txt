@@ -1,5 +1,4 @@
-#Start: 2021-03-09 12:59:32.785047610+01:00
-[33mWARN[0m[0000] No node filter specified                     
+#Start: 2021-03-09 14:37:32.167543326+01:00
 [33mWARN[0m[0000] No node filter specified                     
 [36mINFO[0m[0000] Prep: Network                                
 [36mINFO[0m[0000] Created network 'k3d-default'                
@@ -13,10 +12,11 @@
 [36mINFO[0m[0007] Starting helpers...                          
 [36mINFO[0m[0007] Starting Node 'k3d-default-serverlb'         
 [36mINFO[0m[0008] (Optional) Trying to get IP of the docker host and inject it into the cluster as 'host.k3d.internal' for easy access 
-[36mINFO[0m[0014] Successfully added host record to /etc/hosts in 2/2 nodes and to the CoreDNS ConfigMap 
-[36mINFO[0m[0014] Cluster 'default' created successfully!      
-[36mINFO[0m[0014] --kubeconfig-update-default=false --> sets --kubeconfig-switch-context=false 
-[36mINFO[0m[0014] You can now use it like this:                
+[33mWARN[0m[0010] Failed to patch CoreDNS ConfigMap to include entry '172.19.0.1 host.k3d.internal': Failed to create exec config for node 'k3d-default-server-0': Error response from daemon: Container 00a852f2fdd9ed7d09f68637a2f123d694c2ca9754ac9d7dec617de2c09732e2 is restarting, wait until the container is running 
+[36mINFO[0m[0010] Successfully added host record to /etc/hosts in 2/2 nodes 
+[36mINFO[0m[0010] Cluster 'default' created successfully!      
+[36mINFO[0m[0010] --kubeconfig-update-default=false --> sets --kubeconfig-switch-context=false 
+[36mINFO[0m[0011] You can now use it like this:                
 kubectl config use-context k3d-default
 kubectl cluster-info
-#End: 2021-03-09 12:59:47.376551573+01:00
+#End: 2021-03-09 14:37:43.268134014+01:00
