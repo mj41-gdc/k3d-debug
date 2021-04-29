@@ -1,8 +1,9 @@
-#Start: 2021-03-09 12:59:32.785047610+01:00
-[33mWARN[0m[0000] No node filter specified                     
+#Start: 2021-04-29 14:20:17.679597424+02:00
+k3d version v4.4.3
+k3s version v1.20.6-k3s1 (default)
 [33mWARN[0m[0000] No node filter specified                     
 [36mINFO[0m[0000] Prep: Network                                
-[36mINFO[0m[0000] Created network 'k3d-default'                
+[36mINFO[0m[0000] Created network 'k3d-default' (9310b05d9a9cf57e5cb0fb34c4bb6450bf81a57f21d9681f66b9752379df9ed5) 
 [36mINFO[0m[0000] Created volume 'k3d-default-images'          
 [36mINFO[0m[0001] Creating node 'k3d-default-server-0'         
 [36mINFO[0m[0001] Creating LoadBalancer 'k3d-default-serverlb' 
@@ -13,10 +14,10 @@
 [36mINFO[0m[0007] Starting helpers...                          
 [36mINFO[0m[0007] Starting Node 'k3d-default-serverlb'         
 [36mINFO[0m[0008] (Optional) Trying to get IP of the docker host and inject it into the cluster as 'host.k3d.internal' for easy access 
-[36mINFO[0m[0014] Successfully added host record to /etc/hosts in 2/2 nodes and to the CoreDNS ConfigMap 
-[36mINFO[0m[0014] Cluster 'default' created successfully!      
-[36mINFO[0m[0014] --kubeconfig-update-default=false --> sets --kubeconfig-switch-context=false 
-[36mINFO[0m[0014] You can now use it like this:                
+[36mINFO[0m[0011] Successfully added host record to /etc/hosts in 2/2 nodes and to the CoreDNS ConfigMap 
+[36mINFO[0m[0011] Cluster 'default' created successfully!      
+[36mINFO[0m[0011] --kubeconfig-update-default=false --> sets --kubeconfig-switch-context=false 
+[36mINFO[0m[0011] You can now use it like this:                
 kubectl config use-context k3d-default
 kubectl cluster-info
-#End: 2021-03-09 12:59:47.376551573+01:00
+#End: 2021-04-29 14:20:29.354935126+02:00
