@@ -6,6 +6,9 @@
     pwd
     ls -al
 
+    # console 1 to 5
+    cd ~/devel/k3d
+
     # console 1
     # check logs and send them to github if all seems ok
     ls -als log*.txt
@@ -20,7 +23,7 @@
     echo "#Start: `date --rfc-3339=ns`" > log-docker-events.txt ; docker events | tee -a log-docker-events.txt #c2
 
     # console 3
-    echo "#Start: `date --rfc-3339=ns`" > log-start-k3d.txt ; k3d cluster create default --image rancher/k3s:v1.20.4-k3s1 -v /dev/mapper:/dev/mapper -v /lib/modules:/lib/modules 2>&1 | tee -a log-start-k3d.txt ; echo "#End: `date --rfc-3339=ns`" >> log-start-k3d.txt #c3
+    echo "#Start: `date --rfc-3339=ns`" > log-start-k3d.txt ; export K3D_FIX_CGROUPV2=1 ; k3d version >> log-start-k3d.txt ; k3d cluster create default -v /dev/mapper:/dev/mapper 2>&1 | tee -a log-start-k3d.txt ; echo "#End: `date --rfc-3339=ns`" >> log-start-k3d.txt #c3
 
     # console 4
     # a few times run these till you see the first restart
